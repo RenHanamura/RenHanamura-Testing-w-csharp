@@ -12,13 +12,13 @@ namespace Clases_y_animales
             switch (option)
             {
                 case "1":
-                    Console.WriteLine("Ok");
+                    string data = Anfibios.Rana;
+                    Console.WriteLine("El animal es una rana, a continuacion se presentaran ciertos datos del animal\nTipo de animal: {0}\nPeso: {1}\nColor: {2}", Rana.Type, Rana.Height, Rana.Colour);
+                    break;
                     break;
                 case "2":
-                    Console.WriteLine("this shit");
                     break;
                 case "3":
-                    Console.WriteLine("works!");
                     break;
             }
 
