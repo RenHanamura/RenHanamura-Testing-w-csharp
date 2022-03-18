@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+
+
+namespace Clase18Mar
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Bubba Amelia = new Bubba();
+            Amelia.ShowSimps();
+            Amelia.Deadbeats();
+            Amelia.ShowSimps();
+            /*
+            bool ripit = true;
+            string nani;
+            
+           while (ripit == true){
+                Console.WriteLine("Hello World!");
+                Console.WriteLine("Do you want to repeat it?\n Y/N");
+                nani = Console.ReadLine();
+                if (nani == "Y"){
+                    ripit = true;
+                }
+                else
+                {
+                    Console.WriteLine("Well that's all folks");
+                    ripit = false;
+                }*/
+            }
+        } 
+    }
+
