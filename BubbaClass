@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Clase18Mar
+{
+    class Bubba
+    {
+        int[] numba = { 2, 32, 89, 10, 55, 100, 67, 45, 35, 76 };
+
+        public void Deadbeats()
+        {
+            int tako;
+            int countSimps = 0, countNonSimps = 0;
+            for (int dachi = 1; dachi < numba.Length; dachi++)
+            {
+                countSimps++;
+                for (int shrimp = numba.Length - 1; shrimp >= dachi; shrimp--)
+                {
+                    if (numba[shrimp - 1] > numba[shrimp])
+                    {
+                        tako = numba[shrimp - 1];
+                        numba[shrimp - 1] = numba[shrimp];
+                        numba[shrimp] = tako;
+                        countSimps++;
+                    }
+                }
+            }
+            Console.WriteLine("Non simps: {0}\n", countNonSimps);
+            Console.WriteLine("Simps: {0}", countSimps);
+        }
+        public void ShowSimps()
+        {
+            for (int KFP = 0; KFP < numba.Length; KFP++)
+            {
+                Console.WriteLine(numba[KFP]);
+            }
+        }
+    }
+}
