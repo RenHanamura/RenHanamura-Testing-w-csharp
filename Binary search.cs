@@ -88,7 +88,6 @@ bool repeat = true;
                 if(yn == "Y")
                 {
                     Console.WriteLine("Allrighty then");
-                    repeat = true;
                 }
                 else
                 {
