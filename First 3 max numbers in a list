@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+
+namespace Eder_Challenges
+{
+    // Programa para sacar los 3 numeros mas altos de una lista
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<int> numbas = new List<int>();
+            numbas.Add(45);
+            numbas.Add(9132);
+            numbas.Add(718772);
+            numbas.Add(12);
+            numbas.Add(1);
+            numbas.Add(123);
+
+            // Se declara max como equivalente a la lista
+            int max = numbas[0];
+            int second = 0;
+            int third = 0;
+
+            // Aqui inicia nuestrp for
+            for (int a = 0; a<numbas.Count; a++)
+            {
+                //Aqui se comparara nuestro primer valor maximo con la lista y se pondra la variable second equivalente a max
+                if (numbas[a] > max)
+                {
+                    second = max;
+                    max = numbas[a];
+                }
+                //Aqui se comparara nuestro segundo valor con la lista, tomando en cuenta a max para no repetir valor y se pondra la variable third equivalente a second
+                else if (numbas[a] > second)
+                {
+                    third = second;
+                    second = numbas[a];  
+                }
+                //Aqui se comparara nuestro tercer valor con la lista, tomando en cuenta a second para no repetir valor
+                else if (numbas[a] > third)
+                {
+                    third = numbas[a];
+                }
+            }
+            Console.WriteLine("1st: {0}\n2nd: {1}\n3rd: {2}",max, second, third);
+        }
+    }
+}
